@@ -18,7 +18,8 @@ const background = {
 
     this.intervalId = setInterval(() => {
       refs.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
-    }, 1000);
+      console.log(colors[randomIntegerFromInterval(0, colors.length - 1)]);
+    }, 2000);
   },
 
   stop() {
